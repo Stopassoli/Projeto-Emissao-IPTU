@@ -1,0 +1,768 @@
+.tit {
+    margin-top: 10px;
+}
+
+.tit .tit-pref {
+    color: #909090;
+    font-size: 24px;
+}
+
+.tit ul {
+    float: left;
+    padding-left: 0;
+}
+
+.tit span {
+    float: left;
+}
+
+.tit ul li {
+    float: left;
+    list-style-type: none;
+    margin: 0 5px;
+    text-decoration: underline;
+}
+
+.tit ul li:first-child {
+    margin: 0 5px 0 0;
+}
+
+.tit ul li a {
+    color: #909090;
+}
+
+.tit ul span {
+    color: #909090;
+}
+
+.btn-cadeado {
+    margin-top: 28px;
+}
+
+h2 {
+    color: #909090;
+    margin-bottom: 60px;
+    font-size: 48px;
+}
+
+.pessoa-fi {
+    background: url("/img/pessoas-fisica.png") no-repeat 100% center;
+    height: 351px;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+.pessoa-ju {
+    background: url("/img/pessoas-juridica.png") no-repeat 0% center;
+    height: 351px;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+.trilha {
+    background: url("/img/trilha.png") no-repeat center;
+    height: 395px;
+    margin-top: -40px;
+}
+
+.contribuinte {
+    background: url("/img/contribuinte.png") no-repeat 85% center;
+    height: 203px;
+}
+
+.imovel {
+    background: url("/img/imovel.png") no-repeat 15% center;
+    height: 203px;
+}
+
+.boletos {
+    margin-top: 50px;
+    color: #909090;
+    padding: 50px 0 0 0;
+}
+
+.boletos .table thead label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.boletos .table tbody tr td {
+    background: url("/img/casinha.png") no-repeat 8px 5px;
+    font-weight: normal;
+    padding-left: 45px;
+}
+
+.boletos .checkbox-inline {
+    font-size: 15px;
+}
+
+.row2 {
+    margin: 6px 0 10px 0;
+    font-size: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.cod-imovel{
+    font-weight: normal !important;
+    margin-bottom: 0 !important;
+    cursor: pointer;
+}
+
+.cod-imovel input{
+    margin-right: 7px;
+}
+
+.row2 .parcela-unica,
+.row2 .parcelado {
+    float: left;
+    margin-right: 15px;
+}
+
+.row2 .parcela-unica span {
+    color: #7dd585;
+    font-weight: bold;
+}
+
+.row2 .parcelado span {
+    color: #7dd585;
+    font-weight: bold;
+}
+
+.parcelas {
+    font-size: 15px;
+}
+
+.parcelas div + div {
+    border-left: 1px solid #909090;
+}
+
+.parcelas .selecoes a {
+    color: #909090;
+    font-size: 16px;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.parcelas label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-inline:first-child {
+    /*margin-left: 10px;*/
+}
+
+.val {
+    color: #7dd585;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.totais {
+    width: 520px;
+    color: white;
+    float: right;
+}
+
+.totais .tot-vencido,
+.totais .tot-vencer,
+.totais .tot-pagar {
+    height: 58px;
+    padding-top: 8px;
+}
+
+.totais .tot-vencido {
+    background-color: #ff8080;
+}
+.totais .tot-vencer {
+    background-color: #84bde1;
+}
+.totais .tot-pagar {
+    background-color: #7dd585;
+}
+
+.emitir {
+    background-color: #b5b5b5;
+    height: 40px;
+    width: 100%;
+    padding-top: 10px;
+    color: white;
+}
+
+.emitir:hover {
+    color: white;
+    background-color: #a2a2a2;
+    text-decoration: none;
+}
+
+.emitir:focus {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #e4e4e4;
+    height: 80px;
+    margin-top: 50px;
+}
+
+footer .container {
+    margin-top: 33px;
+    color: #909090;
+    font-size: 14px;
+}
+
+.btn-cadeado-mobile {
+    display: none;
+}
+
+@media (max-width: 390px) {
+    .row2 label {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .trilha {
+        display: none;
+    }
+    
+    .pessoa-fi {
+        background-image: none;
+        background-color: #7dd585;
+        height: 100px;
+    }
+    
+    .pessoa-ju {
+        background-image: none;
+        background-color: #84bde1;
+        height: 100px;
+    }
+    
+    .contribuinte {
+        background-image: none;
+        background-color: #3e89e1;
+        height: 100px;
+    }
+    
+    .imovel {
+        background-image: none;
+        background-color: #5f8b9a;
+        height: 100px;
+    }
+    
+    .totais {
+        width: auto;
+    }
+    
+    .btn-cadeado-mobile {
+        display: block;
+    }
+    
+    .btn-cadeado-pc {
+        display: none;
+    }
+    
+    footer .container {
+        font-size: 11px;
+    }
+    
+    .parcelas .selecoes {
+        border: 0;
+        margin: 10px 0;
+    }
+    
+    .tit ul li {
+        float: none;
+        margin: 0 0;
+    }
+    
+    .tit ul span {
+        display: none;
+    }
+    
+    .tit .tit-pref {
+        margin-top: 0;
+    }
+    
+    .input--yoshiko {
+        left: 50% !important;
+        top: 12% !important;
+        margin-left: -60px !important;        
+    }
+
+}
+
+
+
+
+/*METRICAS*/
+
+h3 {
+    color: #909090;
+    font-size: 42px;
+}
+
+.box-grafico {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: #909090;
+}
+
+.box-grafico h4 {
+    border-bottom: 1px solid #dedede;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.grafico {
+    border: 1px solid #dedede;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.acessos,
+.baixados {
+    width: 130px;
+    float: left;
+}
+
+.num {
+    font-size: 36px;
+}
+
+.arrecadacao-total{
+    float: left;
+    width: 380px;
+    margin-left: 25px;
+    padding-left: 80px;
+    background: url("../img/linha.png") no-repeat left center;
+}
+
+.arrecadacao-total .num{
+    color: #7dd585;
+}
+
+.porcentagem {
+    color: #7dd585;
+    width: 88px;
+    height: 71px;
+    float: left;
+    background: url("../img/porcentaem.png") no-repeat center;
+    padding: 24px 0 0 8px;
+    margin: 0 15px;
+}
+
+.form-control-novo {
+    display: inline-block;
+    width: 63%;
+    float: left;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 4px;
+}
+
+.dropdown span {
+    display: inline-block;
+    margin-top: 5px;
+    float: left;
+}
+
+.input-sm {
+    text-align: center;
+}
+
+.input-sm::-webkit-input-placeholder {
+    color: #000;
+}
+
+.input-sm:-moz-placeholder {
+    /* Firefox 18- */
+    color: #000;
+}
+
+.input-sm::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000;
+}
+
+.input-sm:-ms-input-placeholder {
+    color: #000;
+}
+
+.table-condensed tbody tr td,
+.table-condensed thead tr th {
+    cursor: pointer;
+    text-align: center;
+}
+
+.table-condensed tbody tr td:hover,
+.table-condensed thead tr th:hover {
+    background-color: #909090;
+}
+
+#minViewMode{
+    cursor: pointer;
+}
+
+#piechart{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .dropdown .btn {
+        width: 79%;
+    }
+
+    .box-grafico .col-xs-12 {
+        margin: 5px 0;
+    }
+
+    .num {
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .baixados {
+        width: 112px;
+    }
+
+    .acessos {
+        width: 65px;
+        float: left;
+    }
+
+    .porcentagem {
+        margin: 0 4px;
+    }
+
+    .arrecadacao-total{
+        margin-left: 0px;
+        padding-left: 0px;
+        text-align: left;
+        width: 100%;
+        background: none;
+    }
+
+    .arrecadacao-total .num{
+        font-size: 25px;
+    }
+
+    .input-group {
+        display: inline-block;
+    }
+
+    .form-control {
+        text-align: center;
+    }
+
+    #chart_div{
+        display: none;
+    }
+
+    #piechart{
+        display: block;
+    }
+}
+
+
+/*METRICAS*/
+
+/*LOGIN*/
+
+.login .form-group {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .form-inline .form-control {
+        width: 100% !important;
+    }
+
+    .btn-login {
+        margin-left: 15px;
+    }
+}
+
+
+/*LOGIN*/
+
+
+.input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em;
+    max-width: 120px;
+    width: calc(100% - 2em);
+    vertical-align: top;
+}
+
+.input-baixo {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em;
+    max-width: 127px;
+    width: calc(100% - 2em);
+    vertical-align: top;
+}
+
+
+.input__field {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0.8em;
+    width: 60%;
+    border: none;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: #aaa;
+    font-weight: 400;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-appearance: none;
+    /* for box shadows to show on iOS */
+    font-size: 11px;
+    text-align: center;
+}
+
+.input__field:focus {
+    outline: none;
+}
+
+.input__label {
+    display: inline-block;
+    float: right;
+    padding: 0 1em;
+    width: 40%;
+    color: #696969;
+    font-weight: bold;
+    font-size: 70.25%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input__label-content {
+    position: relative;
+    display: block;
+    padding: 1.6em 0;
+    width: 100%;
+}
+
+.graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+}
+
+.icon {
+    color: #ddd;
+    font-size: 150%;
+}
+
+/* Individual styles */
+
+/* Yoshiko */
+.input--yoshiko {
+    position: absolute;
+    right: 35%;
+    top: 57%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input--yoshiko-cont {
+    right: 13%;
+    top: 40%;
+}
+
+.input--yoshiko-imo {
+    right: 59%;
+    top: 40%;
+}
+
+.input__field--yoshiko {
+    width: 100%;
+    border: 2px solid white;
+    -webkit-transition: background-color 0.25s, border-color 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
+    border-radius: 5px;
+    height: 39px;
+}
+
+.btn-cpf {
+    background-color: #7dd585;
+    color: white;
+}
+
+.btn-cnpj {
+    background-color: #84bde1;
+    color: white;
+}
+
+.btn-cont {
+    background-color: #3e89e1;
+    color: white;
+}
+
+.btn-imo {
+    background-color: #5f8b9a;
+    color: white;
+}
+
+.input__label--yoshiko {
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    padding: 0 1.25em;
+    -webkit-transform: translate3d(0, 3em, 0);
+    transform: translate3d(0, 3em, 0);
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: transform 0.25s ;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.input__label-content--yoshiko {
+    color: white;
+    font-weight: bold;
+    padding: 0.25em 0;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.input__label-content--yoshiko::after {
+    content: attr(data-content);
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 0.25em 0;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+}
+
+.input__field--yoshiko:focus + .input__label--yoshiko {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.input__field--yoshiko2:focus + .input__label--yoshiko2,
+.input--filled .input__label--yoshiko {
+    -webkit-transform: translate3d(0, 75px, 0);
+    transform: translate3d(0, 75px, 0);
+}
+
+input .input__field--yoshiko {
+    padding: 10px;
+    display: block;
+    width: 70%;
+}
+
+.input__field--yoshiko:focus::-webkit-.input__field--yoshikao-placeholder {
+    color: white;
+}
+.input__field--yoshiko:focus {
+    color: white;
+}
+.input__field--yoshiko:focus:-moz-placeholder {
+    color: white;
+}
+
+/* FF 4-18 */
+.input__field--yoshiko:focus::-moz-placeholder {
+    color: white;
+}
+
+/* FF 19+ */
+.input__field--yoshiko:focus:-ms-input-placeholder {
+    color: white;
+}
+
+/* IE 10+ */
+
+.input__field--yoshiko {
+    color: transparent;
+}
+.input__field--yoshiko-placeholder {
+    color: transparent;
+}
+.input__field--yoshiko:-moz-placeholder {
+    color: transparent;
+}
+
+/* FF 4-18 */
+.input__field--yoshiko::-moz-placeholder {
+    color: transparent;
+}
+
+/* FF 19+ */
+.input__field--yoshiko:-ms-input-placeholder {
+    color: transparent;
+}
+
+/* IE 10+ */
+
+::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:-moz-placeholder {
+    color: transparent;
+}
+
+::-moz-placeholder {
+    color: transparent;
+}
+
+:-ms-input-placeholder {
+    color: transparent;
+}
+
+.input__field--yoshiko:focus + .input__field--yoshiko,
+.input--filled .input__field--yoshiko {
+    background-color: transparent;
+    border-color: #a3d39c;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .input--yoshiko-cpf {
+      right: 43%;
+  }
+
+  .input--yoshiko-cnpj {
+      right: 22%;
+  }
+
+  .input--yoshiko-imo {
+    right: 54%;
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Emissão IPTU - Prefeitura de Criciúma</title>
+    <meta name="description" content="Emita os seus boletos do IPTU de uma maneira fácil e rápida. Prefeitura de Criciúma - SC"/>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/frameworks/bootstrap/bootstrap.js"></script>
+    <script src="js/frameworks/angular/angular.js"></script>
+    <script src="js/frameworks/angular/angular-animate.js"></script>
+    <script src="js/frameworks/angular/angular-aria.js"></script>
+    <script src="js/frameworks/angular/angular-loader.js"></script>
+    <script src="js/frameworks/angular/angular-messages.js"></script>
+    <script src="js/frameworks/angular/angular-mocks.js"></script>
+    <script src="js/frameworks/angular/angular-resource.js"></script>
+    <script src="js/frameworks/angular/angular-route.js"></script>
+    <script src="js/frameworks/angular/angular-sanitize.js"></script>
+    <script src="js/frameworks/angular/angular-scenario.js"></script>
+    <script src="js/frameworks/angular/angular-touch.js"></script>
+    <script src="js/frameworks/angular/angular-scroll.js"></script>
+    <script src="js/application/angular/myApp.js"></script>
+    <script type="text/javascript" src="js/frameworks/ui-utils.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="myApp" ng-controller="appCtrl">
+      <header>
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-xs-9 col-md-2 ">
+                <a class="navbar-brand" href="/">
+                  <img alt="Logo prefeitura de Criciúma" src="/img/logo-criciuma.png">
+                </a>
+              </div>
+
+              <a class="navbar-header col-xs-3 col-md-1 btn-cadeado btn-cadeado-mobile" href="/login">
+                <img alt="Logo prefeitura de Criciúma" src="/img/cadeado.png">
+              </a>
+
+              <div class="tit col-xs-12 col-md-9">
+                <h1 class='tit-pref'>Prefeitura municipal de Criciúma - SC</h1>
+                <ul>
+                  <li>
+                    <a href="#" class='left'>Sobre a entidade</a>
+                  </li>
+                  <span>•</span>
+                  <li>
+                    <a href="#" class='left'>Para onde vai seu IPTU</a>
+                  </li>
+                  <span>•</span>
+                  <li>
+                    <a href="#" class='left'>Selecione outra entidade</a>
+                  </li>
+                </ul>
+              </div>
+              <a class="navbar-header col-xs-12 col-md-1 btn-cadeado btn-cadeado-pc" href="/login">
+                <img alt="Logo prefeitura de Criciúma" src="/img/cadeado.png">
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div id="content" class="row">
+          <h2 class="col-ms-12 text-center">Informe uma das opções abaixo</h2>
+
+          <div class="pessoa-fi col-xs-12 col-md-5">
+            <span class="input input--yoshiko input--yoshiko-cpf">
+              <input class="input__field input__field--yoshiko btn-cpf" type="text" id="input-10" ng-model="cpf" ui-mask="999.999.999-99">
+              <label class="input__label input__label--yoshiko" for="input-10">
+                <span class="input__label-content input__label-content--yoshiko text-center" data-content="CPF">CPF</span>
+              </label>
+            </span>
+          </div>
+
+          <div class="trilha col-md-2">
+          </div>
+
+          <div class="pessoa-ju col-xs-12 col-md-5">
+            <span class="input input--yoshiko input--yoshiko-cnpj">
+              <input class="input__field input__field--yoshiko btn-cnpj" type="text" id="input-10" ng-model="cnpj" ui-mask="99.999.999/9999-99">
+              <label class="input__label input__label--yoshiko" for="input-10">
+                <span class="input__label-content input__label-content--yoshiko text-center" data-content="CNPJ">CNPJ</span>
+              </label>
+            </span>
+
+          </div>
+
+          <div class="contribuinte col-xs-12 col-md-6">
+            <span class="input-baixo input--yoshiko input--yoshiko-cont">
+              <input class="input__field input__field--yoshiko input__field--yoshiko2 btn-cont" type="text" id="input-10" ng-model="contribuinte" ui-mask="9999999999">
+              <label class="input__label input__label--yoshiko input__label--yoshiko2" for="input-10">
+                <span class="input__label-content input__label-content--yoshiko text-center" data-content="CONTRIBUINTE">CONTRIBUINTE</span>
+              </label>
+            </span>
+          </div>
+
+          <div class="imovel col-xs-12 col-md-6">
+            <span class="input-baixo input--yoshiko input--yoshiko-imo">
+              <input class="input__field input__field--yoshiko input__field--yoshiko2 btn-imo" type="text" id="input-10" ng-model="imovel" ui-mask="9999999999">
+              <label class="input__label input__label--yoshiko input__label--yoshiko2" for="input-10">
+                <span class="input__label-content input__label-content--yoshiko text-center" data-content="IMÓVEL">IMÓVEL</span>
+              </label>
+            </span>
+          </div>
+
+          <div id="boleto" class="boletos col-xs-12 col-md-12" ng-show="cpf.length == 11 || cnpj.length == 14 || contribuinte.length == 10 || imovel.length == 10" ng-hide="cpf.length != 11 || cnpj.length != 14 || contribuinte.length != 10 || imovel.length != 10">
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1" ng-model="AllDebitos" ng-click="selectAllDebitos(boletos)"> Débitos em aberto (5)
+                    </label>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div>
+                      <label class='text-left cod-imovel'>
+                        <input type="checkbox" id="CheckboxSelect" value="select" ng-click="selectDebito(boletos)" ng-model="debito" >IPTU - IMÓVEL 500
+                      </label>
+                    </div>
+                    <div class="row2">
+                      <div class="parcela-unica text-left" ng-hide="debito==true">Parcela única <span>{{totalAV() | currency:"R$ "}}</span></div>
+                      <label class="radio-inline parcela-unica text-left" ng-show="debito==true">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="0" ng-click="selectUnicaAll(boletos)" ng-model="checkUnica">
+                        Parcela única <span>{{totalAV() | currency:"R$ "}}</span>
+                      </label>
+
+                      <div class="parcelado text-left" ng-hide="debito==true">Parcelado (x7) <span>{{totalAV() | currency:"R$ "}}</span></div>
+                      <label class="radio-inline parcelado text-left" ng-show="debito==true">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="1" ng-click="selectUn(boletos)"  ng-model="check">
+                        Parcelado (x7) <span>{{totalAV() | currency:"R$ "}}</span>
+                      </label>
+                    </div>
+
+                    <div class="parcelas" ng-if="check==1">
+                      <div class="selecoes col-xs-12 col-md-2">
+                        <a href="" ng-click="selectAll(boletos)">Marcar todas</a>
+                        <br>
+                        <a href="" ng-click="selectUn(boletos)">Desmarcar todas</a>
+                      </div>
+
+                      <div class="col-xs-12 col-md-10">
+                        <div class="row">
+                          <label class="col-md-3" ng-repeat="boleto in boletos | orderBy:'date'">
+                            <input type="checkbox" name="inlineCheckbox1" id="option2" value="option2" ng-model="boleto.active">
+                              <span class="">{{ boleto.date }}  </span><span class="val">{{ boleto.price | currency: "R$ " }}</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="totais container" ng-show="cpf.length == 11 || cnpj.length == 14 || contribuinte.length == 10 || imovel.length == 10" ng-hide="cpf.length != 11 || cnpj.length != 14 || contribuinte.length != 10 || imovel.length != 10">
+            <div class="row">
+              <div class='tot-vencido col-xs-12 col-md-4 text-center'>
+                Total vencido
+                <br>
+                <strong>R$ 0,00</strong>
+              </div>
+              <div class='tot-vencer col-xs-12 col-md-4 text-center'>
+                Total a vencer
+                <br>
+                <strong>{{ totalAV() | currency:"R$ " }}</strong>
+              </div>
+              <div class='tot-pagar col-xs-12 col-md-4 text-center'>
+                Total a pagar
+                <br>
+                <strong>{{ total() | currency:"R$ " }}</strong>
+              </div>
+              <a class="emitir col-xs-12 col-md-12 text-center" href="#"><strong>Emitir guias selecionadas</strong></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class='container-fluid'>
+        <div class='container'>
+          Copyright © Betha Sistemas. Todos os direitos reservados desde 1985.
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

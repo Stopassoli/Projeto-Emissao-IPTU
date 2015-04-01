@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Acesso ao painel de estatísticas - Emissão IPTU - Prefeitura de Criciúma </title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/mycss.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/frameworks/bootstrap/bootstrap.js"></script>
+    <script src="../js/frameworks/bootstrap/bootstrap-datepicker.js"></script>
+    <script src="../js/frameworks/angular/angular.js"></script>
+    <script src="../js/frameworks/angular/angular-animate.js"></script>
+    <script src="../js/frameworks/angular/angular-aria.js"></script>
+    <script src="../js/frameworks/angular/angular-loader.js"></script>
+    <script src="../js/frameworks/angular/angular-messages.js"></script>
+    <script src="../js/frameworks/angular/angular-mocks.js"></script>
+    <script src="../js/frameworks/angular/angular-resource.js"></script>
+    <script src="../js/frameworks/angular/angular-route.js"></script>
+    <script src="../js/frameworks/angular/angular-sanitize.js"></script>
+    <script src="../js/frameworks/angular/angular-scenario.js"></script>
+    <script src="../js/frameworks/angular/angular-touch.js"></script>
+    <script src="../js/frameworks/angular/angular-scroll.js"></script>
+    <script src="../js/application/angular/myApp.js"></script>
+
+    <script type="text/javascript" src="../js/frameworks/ui-utils.js"></script>
+  </head>
+  <body style="position:relative;">
+
+    <header>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+
+          <div class="row">
+            <div class="navbar-header col-xs-9 col-md-2 ">
+              <a class="navbar-brand" href="/">
+                <img alt="Logo prefeitura de Criciúma" src="/img/logo-criciuma.png">
+              </a>
+            </div>
+
+            <a class="navbar-header col-xs-3 col-md-1 btn-cadeado btn-cadeado-mobile" href="/login">
+              <img alt="Logo prefeitura de Criciúma" src="/img/cadeado.png">
+            </a>
+
+            <div class="tit col-xs-12 col-md-9">
+              <h1 class='tit-pref'>Prefeitura municipal de Criciúma - SC</h1>
+              <ul>
+                <li>
+                  <a href="#" class='left'>Sobre a entidade</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="#" class='left'>Para onde vai seu IPTU</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="#" class='left'>Selecione outra entidade</a>
+                </li>
+              </ul>
+            </div>
+
+            <a class="navbar-header col-xs-12 col-md-1 btn-cadeado btn-cadeado-pc" href="/login">
+              <img alt="Logo prefeitura de Criciúma" src="/img/cadeado.png">
+            </a>
+        </div>
+
+        </div>
+      </nav>
+
+    </header>
+
+
+<div class="container">
+  <h2 class='text-center'>Login</h2>
+  <div class='login row'>
+    <form class="form-inline col-md-4 col-md-offset-4" action="/metricas/">
+      <div class="form-group col-md-12">
+        <label class="sr-only" for="exampleInputLogin3">Login</label>
+        <input type="login" class="form-control" id="exampleInputLogin3" placeholder="Login">
+      </div>
+      <div class="form-group col-md-12">
+        <label class="sr-only" for="exampleInputPassword3">Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Senha">
+      </div>
+      <div class="checkbox col-md-5">
+        <label>
+          <input type="checkbox"> Lembrar
+        </label>
+      </div>
+      <button type="submit" id='botao' class="btn btn-default btn-login col-md-6">Acessar</button>
+    </form>
+  </div>
+</div>
+
+
+    <footer class='container-fluid clearfix'>
+      <div class='container'>
+        Copyright © Betha Sistemas. Todos os direitos reservados desde 1985.
+      </div>
+    </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  </body>
+</html>
