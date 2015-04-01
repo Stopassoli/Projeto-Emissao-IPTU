@@ -46,7 +46,7 @@ h2 {
 }
 
 .pessoa-fi {
-    background: url("img/pessoas-fisica.png") no-repeat 100% center;
+    background: url("../img/pessoas-fisica.png") no-repeat 100% center;
     height: 351px;
     font-size: 36px;
     color: white;
@@ -54,7 +54,7 @@ h2 {
 }
 
 .pessoa-ju {
-    background: url("img/pessoas-juridica.png") no-repeat 0% center;
+    background: url("../img/pessoas-juridica.png") no-repeat 0% center;
     height: 351px;
     font-size: 36px;
     color: white;
@@ -62,18 +62,18 @@ h2 {
 }
 
 .trilha {
-    background: url("img/trilha.png") no-repeat center;
+    background: url("../img/trilha.png") no-repeat center;
     height: 395px;
     margin-top: -40px;
 }
 
 .contribuinte {
-    background: url("img/contribuinte.png") no-repeat 85% center;
+    background: url("../img/contribuinte.png") no-repeat 85% center;
     height: 203px;
 }
 
 .imovel {
-    background: url("img/imovel.png") no-repeat 15% center;
+    background: url("../img/imovel.png") no-repeat 15% center;
     height: 203px;
 }
 
@@ -89,7 +89,7 @@ h2 {
 }
 
 .boletos .table tbody tr td {
-    background: url("img/casinha.png") no-repeat 8px 5px;
+    background: url("../img/casinha.png") no-repeat 8px 5px;
     font-weight: normal;
     padding-left: 45px;
 }
